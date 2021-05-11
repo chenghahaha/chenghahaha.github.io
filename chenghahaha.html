@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon-20210510085656430.ico">
+    <title>chenghahaha</title>
+</head>
+<body onload="show()">
+    <H1>歡迎光臨</H1><HR NOSHADE SIZE=5>
+        
+<IMG SRC="S__7102469.jpg" ALT="我本人" width=200 height=350>
+
+    <H2>就讀高中：<A HREF ="http://www.wghs.tp.edu.tw/1wghs/index.htm">薇閣中學</A><BR>
+        目前就讀學系：<A HREF ="http://www.me.ntu.edu.tw/main.php">台大機械</A><BR>
+        <H3>興趣</H3>
+        <UL>
+        <LI>籃球(<A HREF ="https://www.basketball-reference.com/players/i/iversal01.html">Allen Iverson</A>)<BR>
+        <LI>喝酒(<A HREF ="https://zh.wikipedia.org/wiki/%E7%A7%91%E7%BD%97%E5%A8%9C">Corona</A>)<BR>
+        <LI>做菜(<A HREF ="https://www.youtube.com/channel/UCODOevQkFCpcTYD9ezP22ug">Chris</A>)<BR>
+        </UL>
+        
+        </H2>
+    
+        
+我喜歡<span class="字體顏色">藍色</span><BR>
+
+
+    <audio src="6.mp3" autoplay loop controls=true></audio>
+
+    <P ALIGN=RIGHT>
+        但聞人語響；返景入深林，復照青苔上。
+        </P>
+        
+        <div id="nowDiv"></div>
+        
+        <style>
+        A:hover {
+         text-decoration:underline;
+        background-color:#fafafa;
+        color:red;
+          }
+        
+        .字體顏色 {
+          color: blue;
+        }
+        </style>
+        
+        
+        <script>
+        function show(){
+        var date = new Date(); //日期對象
+        var now = "";
+        now = date.getFullYear()+"-"; 
+        now = now + date.getDate()+"-";
+        now = now + (date.getMonth()+1); //取月的時候取的是當前月-1如果想取當前月+1就可以了
+        
+        now = now + date.getHours()+":";
+        now = now + date.getMinutes()+":";
+        now = now + date.getSeconds();
+        document.getElementById("nowDiv"). innerHTML = now; //div的html是now這個字符串
+        setTimeout("show()",1000); //設置過1000毫秒就是1秒，調用show方法
+        }
+        </script>
+</body>
+</html>
